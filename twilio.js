@@ -1,8 +1,7 @@
-var accountSid = 'ACc71efe287963381a331670fd48bbbf3d'; // Your Account SID from www.twilio.com/console
-var authToken = 'dcefdcfe799de453bcaf65bbc4641adb';   // Your Auth Token from www.twilio.com/console
+require('dotenv').config();
 
 var twilio = require('twilio');
-var client = new twilio(accountSid, authToken);
+var client = new twilio(process.env.accountSid, process.env.authToken);
 
 client.messages.create({
     body: 'Hello from Node',
