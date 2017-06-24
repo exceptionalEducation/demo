@@ -10,4 +10,10 @@ router.get('/', (req,res)=>{
   });
 });
 
+router.post('/sms', (req,res)=>{
+  queries.postOne().then(students=>{
+    res.json(req.body);
+  });
+});
+
 module.exports = router;
