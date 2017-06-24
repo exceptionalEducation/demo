@@ -2,7 +2,6 @@
   "name": "exceptional_edu",
   "version": "1.0.0",
   "description": "excedu",
-  "main": "index.html",
   "scripts": {
     "start": "node ./bin/www"
   },
