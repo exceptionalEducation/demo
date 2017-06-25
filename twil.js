@@ -6,7 +6,7 @@ var client = new twilio(process.env.accountSid, process.env.authToken);
 
 function startingMessage(){
   client.messages.create({
-      body: `Hey it's little bird from Hogwarts Elementary! Your child's IEP review is coming up. Are there any days during the week of September 4th that you are NOT available? (e.g. Monday, Wednesday)`,
+      body: `Hey it's little bird from Hogwarts Elementary! Your child's IEP review is coming up. Are there any days during the week of September 4th that you would NOT be able to make time for an hour meeting? (e.g. Monday and Wednesday)`,
       to: '+18043473241',  // Text this number
       from: '+18042982615' // From a valid Twilio number
   })
@@ -31,10 +31,24 @@ function preDoodleMessage(){
   .then((message) => console.log(message.sid));
 }
 
+function confirmationMessage(){
+  client.messages.create({
+    body: `Hey it's little bird again! Which of these three times is best for Jane's IEP review?
+    1. Monday, September 4th at 3 PM
+    2. Tuesday, September 5th at 8 AM
+    3. Tuesday, September 5th at 11 AM
+    4. None of these times work for me`,
+    to: '+18043473241',  // Text this numbery
+    from: '+18042982615' // From a valid Twilio number
+    })
+}
+
+
 module.exports={
   startingMessage,
   timeOfDayMessage,
-  preDoodleMessage
+  preDoodleMessage,
+  confirmationMessage
 };
 //startingMessage();
 //timeOfDayMessage();

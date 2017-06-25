@@ -46,13 +46,13 @@ app.post('/sms', function(req, res) {
       console.log(schedule.studentIEPWeek['wednesday']);
 
 
-    } else if(req.body.Body.toLowerCase().includes('morning') || req.body.Body.toLowerCase().includes('afternoon') || req.body.Body.toLowerCase().includes('either') ){
+    } else if(req.body.Body.toLowerCase().includes('morning') || req.body.Body.toLowerCase().includes('afternoon') || req.body.Body.toLowerCase().includes('either') || req.body.Body.toLowerCase().includes('both')){
           texts.preDoodleMessage();
           if (req.body.Body.toLowerCase().includes('morning')) {
-            //  morningOrAfternoon('morning');
+            schedule.morningOrAfternoon('morning');
           }
           if (req.body.Body.toLowerCase().includes('afternoon')) {
-              //morningOrAfternoon('afternoon');
+            schedule.morningOrAfternoon('afternoon');
           }
     }
         res.writeHead(200, {'Content-Type': 'text/xml'});
