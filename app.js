@@ -13,6 +13,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 const students = require('./api/students.js');
+//const sms = require('./api/sms.js');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -23,6 +24,7 @@ app.use(cookieParser());
 console.log('made it here');
 
 app.use('/api/v1/students', students);
+//app.use('/sms', sms);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
