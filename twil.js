@@ -35,7 +35,7 @@ module.exports={
   startingMessage,
   timeOfDayMessage,
   preDoodleMessage
-}
+};
 //startingMessage();
 //timeOfDayMessage();
 // confirmationMessage();

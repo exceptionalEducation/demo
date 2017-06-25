@@ -5,7 +5,8 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var texts = require('./twil.js')
+var texts = require('./twil.js');
+var schedule = require('./schedule.js');
 
 app.use(bodyParser.urlencoded({extended:false}));
 //
@@ -27,20 +28,24 @@ app.post('/sms', function(req, res) {
       texts.timeOfDayMessage();
       //continue on to update array of blackout dates
       if (req.body.Body.toLowerCase().includes('monday')) {
-          //blackoutDates('monday');
+          schedule.blackoutDates('monday');
       }
       if (req.body.Body.toLowerCase().includes('tuesday')) {
-          //blackoutDates('tuesday');
+          schedule.blackoutDates('tuesday');
       }
       if (req.body.Body.toLowerCase().includes('wednesday')) {
-          //blackoutDates('wednesday');
+          schedule.blackoutDates('wednesday');
       }
       if (req.body.Body.toLowerCase().includes('thursday')) {
-          //blackoutDates('thursday');
+          schedule.blackoutDates('thursday');
       }
       if (req.body.Body.toLowerCase().includes('friday')) {
-          //blackoutDates('friday');
+          schedule.blackoutDates('friday');
       }
+      console.log(schedule.studentIEPWeek['thursday']);
+      console.log(schedule.studentIEPWeek['wednesday']);
+
+
     } else if(req.body.Body.toLowerCase().includes('morning') || req.body.Body.toLowerCase().includes('afternoon') || req.body.Body.toLowerCase().includes('either') ){
           texts.preDoodleMessage();
           if (req.body.Body.toLowerCase().includes('morning')) {
