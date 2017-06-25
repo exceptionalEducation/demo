@@ -1,5 +1,5 @@
-let studentIEPWeek = [
-  monday = {
+let studentIEPWeek = {
+ monday: {
     date: "Sept 4",
     id: 1,
     day: 'Monday',
@@ -62,7 +62,7 @@ let studentIEPWeek = [
       }
     }
   },
-  Tuesday = {
+  Tuesday : {
     date: "Sept 5",
     id: 2,
     day: 'Tuesday',
@@ -125,7 +125,7 @@ let studentIEPWeek = [
       }
     }
   },
-  Wednesday = {
+  Wednesday : {
     date: "Sept 6",
     id: 3,
     day: 'Wednesday',
@@ -188,7 +188,7 @@ let studentIEPWeek = [
       }
     }
   },
-  Thursday = {
+  Thursday : {
     date: "Sept 7",
     id: 4,
     day: 'Thursday',
@@ -251,7 +251,7 @@ let studentIEPWeek = [
       }
     }
   },
-  Friday = {
+  Friday: {
     date: "Sept 8",
     id: 5,
     day: 'Friday',
@@ -314,7 +314,7 @@ let studentIEPWeek = [
       }
     }
   }
-]
+}
 
 function blackoutDates (value) {
   for (let i = 8; i <= 11; i++) {

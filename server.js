@@ -42,9 +42,6 @@ app.post('/sms', function(req, res) {
       if (req.body.Body.toLowerCase().includes('friday')) {
           schedule.blackoutDates('friday');
       }
-      console.log(schedule.studentIEPWeek['thursday']);
-      console.log(schedule.studentIEPWeek['wednesday']);
-
 
     } else if(req.body.Body.toLowerCase().includes('morning') || req.body.Body.toLowerCase().includes('afternoon') || req.body.Body.toLowerCase().includes('either') || req.body.Body.toLowerCase().includes('both')){
           texts.preDoodleMessage();
