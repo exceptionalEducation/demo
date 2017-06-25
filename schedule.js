@@ -5,25 +5,25 @@ let studentIEPWeek = [
     day: 'Monday',
     morning: {
       8: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       9: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       10: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       11: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -31,31 +31,31 @@ let studentIEPWeek = [
     },
     afternoon: {
       1: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       2: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       3: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       4: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       5: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -68,25 +68,25 @@ let studentIEPWeek = [
     day: 'Tuesday',
     morning: {
       8: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       9: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       10: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       11: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -94,31 +94,31 @@ let studentIEPWeek = [
     },
     afternoon: {
       1: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       2: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       3: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       4: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       5: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -131,25 +131,25 @@ let studentIEPWeek = [
     day: 'Wednesday',
     morning: {
       8: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       9: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       10: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       11: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -157,31 +157,31 @@ let studentIEPWeek = [
     },
     afternoon: {
       1: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       2: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       3: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       4: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       5: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -194,25 +194,25 @@ let studentIEPWeek = [
     day: 'Thursday',
     morning: {
       8: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       9: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       10: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       11: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -220,31 +220,31 @@ let studentIEPWeek = [
     },
     afternoon: {
       1: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       2: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       3: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       4: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       5: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
