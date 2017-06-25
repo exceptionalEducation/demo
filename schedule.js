@@ -1,5 +1,6 @@
-let studentIEPWeek = {
-  monday: {
+let studentIEPWeek = [
+  monday = {
+    date: "Sept 4",
     id: 1,
     day: 'Monday',
     morning: {
@@ -61,7 +62,8 @@ let studentIEPWeek = {
       }
     }
   },
-  tuesday: {
+  Tuesday = {
+    date: "Sept 5",
     id: 2,
     day: 'Tuesday',
     morning: {
@@ -123,7 +125,8 @@ let studentIEPWeek = {
       }
     }
   },
-  wednesday: {
+  Wednesday = {
+    date: "Sept 6",
     id: 3,
     day: 'Wednesday',
     morning: {
@@ -185,7 +188,8 @@ let studentIEPWeek = {
       }
     }
   },
-  thursday: {
+  Thursday = {
+    date: "Sept 7",
     id: 4,
     day: 'Thursday',
     morning: {
@@ -247,30 +251,31 @@ let studentIEPWeek = {
       }
     }
   },
-  friday: {
+  Friday = {
+    date: "Sept 8",
     id: 5,
     day: 'Friday',
     morning: {
       8: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
     9: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       10: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       11: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -278,46 +283,45 @@ let studentIEPWeek = {
     },
     afternoon: {
       1: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       2: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       3: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       4: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       5: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       }
     }
   }
-};
+]
 
 function blackoutDates (value) {
-  console.log(value);
   for (let i = 8; i <= 11; i++) {
-    studentIEPWeek[value].morning[i].parent = false;
+    studentIEPWeek[value].morning[i].parent = true;
       }
   for (let i = 1; i <= 5 ; i++) {
-    studentIEPWeek[value].afternoon[i].parent = false;
+    studentIEPWeek[value].afternoon[i].parent = true;
   }
 }
 
