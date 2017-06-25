@@ -39,8 +39,11 @@ app.post('/sms', function(req, res) {
         case response.includes('3'):
             body = 'Thanks for confirming! Mr. Wybrant is looking forward to seeing you Tuesday, September 5th at 11 AM.';
           break;
+        case response.includes('4'):
+            body = 'OK. I will look for other times and respond with a few more options soon';
+          break;
         default:
-            body = 'Please either choose one option from above or contact Mr. Wybrant at 202-999-9999';
+            body = 'I did not understand that. Please type 1, 2, 3, or 4 or contact Mr. Wybrant at 202-999-9999';
           break;
         }
       client.messages.create({
@@ -50,7 +53,7 @@ app.post('/sms', function(req, res) {
       });
     } else{
       client.messages.create({
-        body: `Please either choose one option from above or contact Mr. Wybrant at 202-999-9999`,
+        body: `I didn't understand that. Please type 1, 2, 3, or 4 or contact Mr. Wybrant at 202-999-9999`,
         to: '+18043473241',  // Text this numbery
         from: '+18042982615' // From a valid Twilio number
       });

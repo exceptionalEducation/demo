@@ -6,7 +6,7 @@ var client = new twilio(process.env.accountSid, process.env.authToken);
 
 function startingMessage(){
   client.messages.create({
-      body: `Hey it's little bird from Hogwarts Elementary! Your child's IEP review is coming up. Are there any days during the week of September 4th that you would NOT be able to make time for an hour meeting? (e.g. Monday and Wednesday)`,
+      body: `Hey it's little bird from Hogwarts Elementary! Your child's IEP review is coming up. What days during the week of September 4th would you be available to meet for an hour? For example, type 'Monday, Tuesday and Wednesday'`,
       to: '+18043473241',  // Text this number
       from: '+18042982615' // From a valid Twilio number
   })
@@ -34,6 +34,7 @@ function preDoodleMessage(){
 function confirmationMessage(){
   client.messages.create({
     body: `Hey it's little bird again! Which of these three times is best for Jane's IEP review?
+    Please type one of the following numbers:
     1. Monday, September 4th at 3 PM
     2. Tuesday, September 5th at 8 AM
     3. Tuesday, September 5th at 11 AM
