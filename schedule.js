@@ -311,60 +311,30 @@ let studentIEPWeek = [
   }
 ]
 
-blackoutDates([1,2]);
-contactStakeholders();
-
-function blackoutDates (noGoArray) {
-  noGoArray.forEach(day => {
-    studentIEPWeek.forEach(weekday => {
-      if (day == weekday.id) {
-        for (let i = 8; i <= 11; i++) {
-          weekday.morning[i].parent = false;
-            }
-        for (let i = 1; i <= 5 ; i++) {
-          weekday.afternoon[i].parent = false;
-        }
+function blackoutDates (value) {
+  for (let i = 8; i <= 11; i++) {
+    studentIEPWeek[value].morning[i].parent = false;
       }
-    })
-  })
-morningOrAfternoon(2)
-}
-
-function morningOrAfternoon (number) {
-  switch (true) {
-    case number == 1:
-      studentIEPWeek.forEach(weekday => {
-          for (let i = 1; i <= 5; i++) {
-            weekday.afternoon[i].parent = false;
-            }
-        })
-      break;
-    case number == 2:
-      studentIEPWeek.forEach(weekday => {
-          for (let i = 8; i <= 11; i++) {
-            weekday.morning[i].parent = false;
-            }
-        })
-      break;
+  for (let i = 1; i <= 5 ; i++) {
+    studentIEPWeek[value].afternoon[i].parent = false;
   }
-
 }
 
-console.log(studentIEPWeek);
-
-function contactStakeholders(){
-  let slotsValid = [];
-  studentIEPWeek.forEach(weekday => {
-    for (let i = 8; i <= 11; i++) {
-      if (weekday.morning[i].parent == true) {
-        slotsValid.push(`${weekday.day}, at ${i}:00am`);
-      }
+function morningOrAfternoon (value) {
+  for(let key in studentIEPWeek){
+  switch (true) {
+    case value == 'morning':
+          for (let i = 1; i <= 5; i++) {
+            studentIEPWeek[key].afternoon[i].parent = false;
+            }
+      break;
+    case value == 'afternoon':
+          for (let i = 8; i <= 11; i++) {
+            studentIEPWeek[key].morning[i].parent = false;
+            }
+      break;
     }
-    for (let i = 1; i <= 5; i++) {
-      if (weekday.afternoon[i].parent == true) {
-        slotsValid.push(`${weekday.day}, at ${i}:00pm.`);
-      }
-    }
-  })
-  console.log(slotsValid)
+  }
 }
+
+module.exports = {morningOrAfternoon, blackoutDates, studentIEPWeek}
