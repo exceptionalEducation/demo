@@ -257,25 +257,25 @@ let studentIEPWeek = [
     day: 'Friday',
     morning: {
       8: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
     9: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       10: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       11: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -283,31 +283,31 @@ let studentIEPWeek = [
     },
     afternoon: {
       1: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       2: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       3: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       4: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
       },
       5: {
-        parent: true,
+        parent: false,
         SpecialEd: false,
         Service1: false,
         GenEd: false
@@ -318,10 +318,10 @@ let studentIEPWeek = [
 
 function blackoutDates (value) {
   for (let i = 8; i <= 11; i++) {
-    studentIEPWeek[value].morning[i].parent = false;
+    studentIEPWeek[value].morning[i].parent = true;
       }
   for (let i = 1; i <= 5 ; i++) {
-    studentIEPWeek[value].afternoon[i].parent = false;
+    studentIEPWeek[value].afternoon[i].parent = true;
   }
 }
 
