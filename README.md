@@ -15,7 +15,7 @@ Little Bird is a web and SMS based app that aims to improve parent attendance at
 * [Caroline O'Donnell](caroline.odonnell26@gmail.com)
 * [Conny Karman](conny.karman@gmail.com)
 * [Courtney Drake](courtneyldrake@gmail.com)
-* [Blake Gould](blake.gould@scienceandtech.org)
+* [Blake Gould](gouldbf@gmail.com)
 * [Marlena Baker](baker.marlena@gmail.com)
 
 #### Technologies
