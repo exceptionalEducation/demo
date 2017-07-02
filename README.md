@@ -11,12 +11,12 @@ Little Bird is a web and SMS based app that aims to improve parent attendance at
   * Parents can communicate available time or blacked out days via text
 
 #### Team Members
-* For business inquiries, contact [Jill Tew](jillrcarty@gmail.com).
-* [Caroline O'Donnell](caroline.odonnell26@gmail.com)
-* [Conny Karman](conny.karman@gmail.com)
-* [Courtney Drake](courtneyldrake@gmail.com)
-* [Blake Gould](gouldbf@gmail.com)
-* [Marlena Baker](baker.marlena@gmail.com)
+* For business inquiries, contact [Jill Tew](mailto:jillrcarty@gmail.com).
+* [Caroline O'Donnell](mailto:caroline.odonnell26@gmail.com)
+* [Conny Karman](mailto:conny.karman@gmail.com)
+* [Courtney Drake](mailto:courtneyldrake@gmail.com)
+* [Blake Gould](mailto:gouldbf@gmail.com)
+* [Marlena Baker](mailto:baker.marlena@gmail.com)
 
 #### Technologies
 * [Twilio](https://www.twilio.com/docs/)
